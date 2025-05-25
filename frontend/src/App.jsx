@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/MyProfileSite">
       <Routes>
       <Route path = "/" element = {<MainPage />} />
       </Routes>
