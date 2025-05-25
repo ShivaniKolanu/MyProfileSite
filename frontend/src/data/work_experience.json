@@ -1,0 +1,91 @@
+[
+    {
+      "year": "2024",
+      "month": "July",
+      "role": "Associate Application Developer",
+      "company": "ADP",
+      "location": "Alpharetta, GA",
+      "description": [
+       " Driving innovation in the Payroll Next Gen Innovation department by designing and developing intuitive UI components for the Test Automation Framework, empowering the entire unit with streamlined testing capabilities.",
+" Leveraging Angular, TypeScript, and Jest to build scalable, reusable UI solutions that enhance the efficiency of automated testing processes.",
+ "Collaborating in an Agile environment to deliver a user-centric framework that significantly improves test coverage and reduces manual efforts across the organization."
+      ]
+    },
+    {
+      "year": "2023",
+      "month": "Aug.",
+      "endDate": "April 2024",
+      "role": "Graduate Research Assistant",
+      "company": "Georgia State University",
+      "location": "Atlanta, GA",
+      "description": [
+        "Developed OGMS, a comprehensive software platform to streamline academic processes for Masters and PhD students in the Department of Computer Science.",
+        "Built and optimized PostgreSQL database schemas, ensuring efficient storage and retrieval of student applications, course assignments, and funding details.",
+        "Implemented role-based access control to protect sensitive student and faculty data."
+        
+      ]
+    },
+    {
+      "year": "2023",
+      "month": "May",
+      "endDate": "August 2023",
+      "role": "Software Developer Intern",
+      "company": "ADP",
+      "location": "Alpharetta, GA",
+      "description": [
+        "Developed dynamic UI components for the Test UI Automation project using Angular and TypeScript, improving user experience and functionality.",
+        "Collaborated in Agile sprints, participating in daily stand-ups, sprint planning, and retrospectives to ensure seamless team integration."
+      ]
+    },
+    {
+      "year": "2023",
+      "month": "Jan.",
+      "endDate": "May 2023",
+      "role": "Graduate Research Assistant",
+      "company": "Georgia State University",
+      "location": "Atlanta, GA",
+      "description": [
+       " Developed OGMS, a comprehensive software platform to streamline academic processes for Masters and PhD students in the Department of Computer Science.",
+"Designed high-performance RESTful APIs using Flask (Python) and optimized PostgreSQL database structures to address complex academic workflows.",
+"Enhanced user experience by integrating React-based frontend, enabling seamless tracking of admissions, GTA assignments, and academic progress"      ]
+    },
+    {
+      "year": "2022",
+      "month": "Aug.",
+      "endDate": "December 2022",
+      "role": "Student Operations Technician",
+      "company": "Georgia State University",
+      "location": "Atlanta, GA",
+      "description": [
+        "Ensuring the smooth execution of scheduled events by preparing and organizing event spaces.",
+        "Assisting event organizers with last-minute setup adjustments and troubleshooting logistical challenges.",
+        "Collaborating with team members to ensure timely and efficient event preparations."
+      ]
+    },
+    {
+      "year": "2021",
+      "month": "Aug.",
+      "endDate": "July 2022",
+      "role": "Software Developer",
+      "company": "IBM India Private Limited",
+      "location": "Bengaluru, India",
+      "description": [
+        "Delivered 3+ projects utilizing Angular, TypeScript, and PHP, focusing on robust design, testing, and deployment.",
+        "Implemented automated data reconciliation using Spark and Scala, scheduling jobs to run bi-daily for seamless processing.",
+        "Optimized SQL queries and resolved customer-reported issues by debugging and delivering reliable code fixes."
+      ]
+    },
+    {
+      "year": "2021",
+      "month": "Jan.",
+      "endDate": "July 2021",
+      "role": "Software Developer Intern",
+      "company": "IBM India Private Limited",
+      "location": "Bengaluru, India",
+      "description": [
+        "Completed 2+ main stream projects where I have developed applications using Angular, Typescript and PHP",
+         "Worked in an agile, collaborative environment across software architecture understanding both front-end and back-end concerns."
+      ]
+    }
+  ]
+  
