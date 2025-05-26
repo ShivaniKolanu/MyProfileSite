@@ -2,6 +2,8 @@ import NameHeaderSimple from "./NameHeaderSimple";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Education from "./Education";
+import Footer from "./Footer";
 import bgImage from "../assets/bg-img.png";
 import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
@@ -85,6 +87,7 @@ export default function MainPage() {
               <Button
                 onMouseEnter={() => setHoveredButton('education')}
                 onMouseLeave={() => setHoveredButton(null)}
+                onClick={() => scrollToSection('education')}
               >
                 {hoveredButton === 'education' && <AnimatedMusicNotes />}
                 Education
@@ -96,6 +99,8 @@ export default function MainPage() {
       <Experience />
       <Skills />
       <Projects />
+      <Education />
+      <Footer />
     </>
   );
 }

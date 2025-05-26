@@ -107,6 +107,10 @@ export const TimelineContent = styled(motion.div)`
     border-color: rgba(100, 255, 218, 0.3);
     box-shadow: 0 8px 24px rgba(100, 255, 218, 0.15);
     
+    h3::after {
+      width: 100%;
+    }
+    
     &::before {
       content: '♫';
       position: absolute;
@@ -165,17 +169,12 @@ export const TimelineContent = styled(motion.div)`
           background-color: #64ffda;
           transition: width 0.3s ease;
         }
+      }
+    }
 
-        &::before {
-          content: '♪';
-          position: absolute;
-          ${props => props.isEven ? 'left: -20px' : 'right: -20px'};
-          top: 0;
-          color: #64ffda;
-          font-size: 1rem;
-          opacity: 0;
-          transition: all 0.3s ease;
-        }
+    &:hover {
+      h3::after {
+        width: 100%;
       }
     }
 

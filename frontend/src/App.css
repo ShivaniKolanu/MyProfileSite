@@ -68,7 +68,6 @@
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  transform: translate(-50%, -50%);
   color: #ffffff;
   font-size: 24px;
   display: flex;
@@ -76,23 +75,24 @@
   justify-content: center;
   will-change: transform;
   transform-origin: center;
-  transition: transform 0.05s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .custom-cursor::before {
-  content: "♪";
+  content: "𝄞";
   position: absolute;
-  animation: cursorFloat 2s infinite ease-in-out;
+  transform-style: preserve-3d;
+  animation: cursorFloat 1.5s infinite ease-in-out;
 }
 
 @keyframes cursorFloat {
   0%, 100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateZ(0);
   }
   50% {
-    transform: rotate(15deg) scale(1.1);
+    transform: rotate(15deg) scale(1.1) translateZ(0);
   }
 }
 
@@ -100,7 +100,7 @@ a:hover ~ .custom-cursor::before,
 button:hover ~ .custom-cursor::before,
 [role="button"]:hover ~ .custom-cursor::before,
 .clickable:hover ~ .custom-cursor::before {
-  content: "♫";
+  content: "𝄞";
   animation: cursorFloat 1s infinite ease-in-out;
 }
 

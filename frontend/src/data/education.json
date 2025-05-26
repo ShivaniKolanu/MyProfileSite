@@ -1,0 +1,20 @@
+{
+  "educations": [
+    {
+      "school": "Georgia State University",
+      "location": "Atlanta, GA",
+      "degree": "Masters in Computer Science",
+      "duration": "Aug. 2022 – May 2024",
+      "gpa": "4.09/4.3",
+      "imagePath": "ms-diploma.png"
+    },
+    {
+      "school": "Malla Reddy Engineering College for Women",
+      "location": "Hyderabad, India",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "duration": "Jul. 2017 – Jul. 2021",
+      "gpa": "8.25/10.0",
+      "imagePath": "btech-pc.jpg"
+    }
+  ]
+}
