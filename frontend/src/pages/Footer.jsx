@@ -54,7 +54,7 @@ const Footer = () => {
         </SocialLinks>
         
         <MadeWith>
-          Made with 
+          <span>Made with</span>
           <HeartIcon
             initial={{ scale: 1 }}
             animate={{
@@ -69,9 +69,11 @@ const Footer = () => {
           >
             ♥
           </HeartIcon>
-          using <TechStack>React</TechStack> & <TechStack>Framer Motion</TechStack>
+          <span>
+            using <TechStack>React</TechStack> & <TechStack>Framer Motion</TechStack>
+          </span>
           <Divider>|</Divider>
-          Built by Shivani Kolanu with AI collaboration
+          <span>Built by Shivani Kolanu with AI collaboration</span>
         </MadeWith>
 
         <Copyright>

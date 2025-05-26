@@ -65,13 +65,37 @@ export const HeartIcon = styled(motion.span)`
   font-size: 1rem;
 `;
 
+export const Divider = styled.span`
+  margin: 0 0.5rem;
+  color: #64ffda;
+  opacity: 0.6;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const MadeWith = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.3rem;
   color: #d4d7df;
   font-family: "Electrolize", sans-serif;
   font-size: 0.9rem;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.5;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    ${Divider} {
+      display: none;
+    }
+  }
 `;
 
 export const TechStack = styled.span`
@@ -90,10 +114,4 @@ export const BuiltBy = styled.div`
   &:hover {
     opacity: 1;
   }
-`;
-
-export const Divider = styled.span`
-  margin: 0 1rem;
-  color: #64ffda;
-  opacity: 0.6;
 `;
