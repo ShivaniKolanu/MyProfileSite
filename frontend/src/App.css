@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -53,5 +54,89 @@
   100% {
     opacity: 0;
     transform: translateY(-30px);
+  }
+}
+
+/* Custom Cursor Styles */
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  transform-origin: center;
+  transition: transform 0.05s linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.custom-cursor::before {
+  content: "♪";
+  position: absolute;
+  animation: cursorFloat 2s infinite ease-in-out;
+}
+
+@keyframes cursorFloat {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
+
+a:hover ~ .custom-cursor::before,
+button:hover ~ .custom-cursor::before,
+[role="button"]:hover ~ .custom-cursor::before,
+.clickable:hover ~ .custom-cursor::before {
+  content: "♫";
+  animation: cursorFloat 1s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .mt-20 {
+    margin-top: 4rem !important;
+  }
+}
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) {
+  * {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none;
   }
 }

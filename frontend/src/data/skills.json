@@ -1,0 +1,83 @@
+{
+  "categories": [
+    {
+      "name": "Frontend Development",
+      "skills": [
+        "React",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML/CSS",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Material UI",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "skills": [
+        "Node.js",
+        "Express",
+        "Spring Boot",
+        "Java",
+        "Python",
+        "Flask",
+        "PHP",
+        "Laravel",
+        "RESTful APIs"
+      ]
+    },
+    {
+      "name": "Database & Cloud",
+      "skills": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQL Server",
+        "IBM Db2",
+        "SQLAlchemy",
+        "Database Design",
+        "Red Hat OpenShift"
+      ]
+    },
+    {
+      "name": "DevOps & Tools",
+      "skills": [
+        "Git",
+        "Docker",
+        "Jenkins",
+        "Concourse",
+        "Bitbucket",
+        "Jest",
+        "Playwright",
+        "VS Code",
+        "PyCharm",
+        "IntelliJ",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "AI Development",
+      "skills": [
+        "OpenAI API Integration",
+        "Google Gemini API Integration",
+        "GitHub Copilot",
+        "LangGraph",
+        "AI-Enhanced Features",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "name": "Additional Expertise",
+      "skills": [
+        "Agile Development",
+        "Blockchain",
+        "Scala",
+        "UI/UX Design",
+        "System Design"
+      ]
+    }
+  ]
+}

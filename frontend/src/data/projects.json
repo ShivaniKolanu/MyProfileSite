@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "title": "Online Voting System using Blockchain",
+      "technologies": ["Blockchain", "Python", "Face Recognition", "React", "Flask", "PostgreSQL"],
+      "description": [
+        "Online voting enables voters to cast their vote privately and easily from any location and on any device with internet access.",
+        "This enables election officials to assure that their votes remain cast-as-intended, recorded-as-cast and counted-as-recorded."
+      ],
+      "image": "online-voting.png",
+      "links": {
+        "github": "https://github.com/ShivaniKolanu/CSC8930-Masters_Project",
+        "paper": "https://drive.google.com/file/d/1T6CbyPfS6CuIaM2aWdanNOmtKaB6kMez/view?usp=sharing",
+        "presentation": "https://li.csgsu.org/files/2024Shivani.pdf"
+      }
+    },
+    {
+      "title": "HireVista: Talent Recruitment Platform",
+      "technologies": ["React", "Bootstrap", "Spring Boot", "MySQL", "Chart.js", "Swagger"],
+      "description": [
+        "A recruitment platform for job posting, application tracking, and status updates.",
+        "Optimized API interactions with Swagger, ensuring clear documentation and maintainable endpoints.",
+        "Visualized hiring metrics using Chart.js, aiding data-driven decision-making for recruitment processes."
+      ],
+      "image": "hireVista.png",
+      "links": {
+        "github": "https://github.com/ShivaniKolanu/adp-capstone-project"
+      }
+    },
+    {
+      "title": "GeminiUnifiedReview",
+      "technologies": ["Kotlin", "Android", "Google Gemini API", "XML"],
+      "description": [
+        "Developed an Android app that consolidates product reviews and ratings from multiple sources using image recognition",
+        "Integrated Google Gemini API for efficient product information retrieval from product images",
+        "Implemented real-time data fetching with intuitive UI for seamless user experience"
+      ],
+      "image": "gemInsight_2.jpg",
+      "links": {
+        "github": "https://github.com/ShivaniKolanu/geminiUnifiedReview"
+      }
+    },
+    {
+      "title": "Network Science Analysis Tool",
+      "technologies": ["Python", "NetworkX", "NumPy", "Scikit-learn", "Matplotlib", "Google Colab"],
+      "description": [
+        "Developed a comprehensive network analysis tool implementing various graph algorithms and visualization techniques",
+        "Analyzed complex networks including Karate Club and Football datasets using NetworkX library",
+        "Created interactive visualizations and metrics for network topology analysis"
+      ],
+      "image": "com-det.png",
+      "links": {
+        "github": "https://github.com/ShivaniKolanu/Community-Detection-Based-On-Distance-Dynamics"
+      }
+    }
+  ]
+}

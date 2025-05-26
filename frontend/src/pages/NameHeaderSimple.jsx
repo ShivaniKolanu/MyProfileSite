@@ -21,7 +21,7 @@ const NameHeaderSimple = () => {
 
   return (
     <div
-      className="flex flex-col items-center mt-20 text-white" // Removed w-screen h-screen
+      className="flex flex-col items-center mt-20 text-white px-4"
       style={{
         fontFamily: 'Carattere, cursive',
         fontWeight: 600,
@@ -32,7 +32,10 @@ const NameHeaderSimple = () => {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="text-5xl flex flex-wrap justify-center"
+        className="text-5xl flex flex-wrap justify-center text-center"
+        style={{
+          fontSize: 'clamp(2.5rem, 8vw, 3.5rem)'
+        }}
       >
         {"Hi, I'm Shivani Kolanu".split("").map((char, i) => (
           <motion.span key={i} variants={letterVariants}>
@@ -46,7 +49,10 @@ const NameHeaderSimple = () => {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="text-3xl mt-2 flex flex-wrap justify-center"
+        className="text-3xl mt-2 flex flex-wrap justify-center text-center"
+        style={{
+          fontSize: 'clamp(1.5rem, 4vw, 2rem)'
+        }}
       >
         {"I'm a full stack developer.".split("").map((char, i) => (
           <motion.span key={i} variants={letterVariants}>
@@ -56,11 +62,11 @@ const NameHeaderSimple = () => {
       </motion.div>
 
       {/* Equalizer */}
-      <div className="flex items-end gap-2 h-24 mt-4">
+      <div className="flex items-end gap-1 sm:gap-2 h-24 mt-4 overflow-hidden">
         {barHeights.map((height, i) => (
           <motion.div
             key={i}
-            className="w-5 bg-gradient-to-t from-gray-100 to-gray-200 rounded-t-full"
+            className="w-3 sm:w-5 bg-gradient-to-t from-gray-100 to-gray-200 rounded-t-full"
             initial={{ height }}
             animate={{ height: [height, height + 30, height] }}
             transition={{
@@ -76,10 +82,10 @@ const NameHeaderSimple = () => {
 
       {/* Floating Notes */}
       <div className="relative flex justify-center items-center h-12 mt-4 w-full overflow-visible">
-        {["♪", "♫", "♬", "♩", "♭", "♯", "𝄞", "𝄢"].map((note, i) => (
+        {["♪", "♫", "♬", "♩"].map((note, i) => (
           <motion.span
             key={i}
-            className="text-3xl text-gray-100 mx-3"
+            className="text-2xl sm:text-3xl text-gray-100 mx-2 sm:mx-3"
             initial={{ opacity: 0, y: 0 }}
             animate={{
               opacity: [0, 1, 0],

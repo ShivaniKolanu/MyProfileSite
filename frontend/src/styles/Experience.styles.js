@@ -33,6 +33,10 @@ export const Timeline = styled.div`
     bottom: 0;
     left: 50%;
     margin-left: -1.5px;
+
+    @media (max-width: 768px) {
+      left: 20px;
+    }
   }
 `;
 
@@ -42,14 +46,28 @@ export const TimelineItem = styled(motion.div)`
   width: 50%;
   box-sizing: border-box;
   
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+  
   &:nth-child(odd) {
     left: 0;
     text-align: right;
+
+    @media (max-width: 768px) {
+      text-align: left;
+    }
   }
   
   &:nth-child(even) {
     left: 50%;
     text-align: left;
+
+    @media (max-width: 768px) {
+      left: 0;
+    }
   }
 
   &::after {
@@ -64,11 +82,11 @@ export const TimelineItem = styled(motion.div)`
     z-index: 1;
     transition: all 0.3s ease;
     ${props => props.index % 2 === 0 ? 'right: -8px;' : 'left: -8px;'}
-  }
 
-  &:hover::after {
-    transform: scale(1.3);
-    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+    @media (max-width: 768px) {
+      left: 12px;
+      right: auto;
+    }
   }
 `;
 
@@ -88,12 +106,34 @@ export const TimelineContent = styled(motion.div)`
     transform: translateY(-5px);
     border-color: rgba(100, 255, 218, 0.3);
     box-shadow: 0 8px 24px rgba(100, 255, 218, 0.15);
-
-    .header-container .title-row h3::after {
-      width: 100%;
+    
+    &::before {
+      content: '♫';
+      position: absolute;
+      ${props => props.isEven ? 'right: -30px' : 'left: -30px'};
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64ffda;
+      font-size: 1.2rem;
+      animation: rotateAndFade 0.8s ease-out forwards;
     }
   }
-  
+
+  @keyframes rotateAndFade {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%) rotate(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+
   .header-container {
     display: flex;
     flex-direction: column;
@@ -125,6 +165,29 @@ export const TimelineContent = styled(motion.div)`
           background-color: #64ffda;
           transition: width 0.3s ease;
         }
+
+        &::before {
+          content: '♪';
+          position: absolute;
+          ${props => props.isEven ? 'left: -20px' : 'right: -20px'};
+          top: 0;
+          color: #64ffda;
+          font-size: 1rem;
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .title-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .company-info {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }
@@ -160,7 +223,7 @@ export const TimelineContent = styled(motion.div)`
   ul {
     margin: 0;
     padding-left: 20px;
-    color:rgb(212, 215, 223);
+    color: rgb(212, 215, 223);
     list-style: none;
     text-align: left;
     
@@ -175,24 +238,31 @@ export const TimelineContent = styled(motion.div)`
       
       &:hover {
         opacity: 1;
-        
-        &::before {
-          background-color: #64ffda;
-          transform: scale(1.2);
-          box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
-        }
       }
       
       &::before {
-        content: '';
+        content: '♪';
         position: absolute;
         left: 0;
-        top: 8px;
-        width: 6px;
-        height: 6px;
-        background-color: rgba(100, 255, 218, 0.7);
-        border-radius: 50%;
+        top: 3px;
+        color: #64ffda;
+        font-size: 0.9rem;
         transition: all 0.3s ease;
+      }
+
+      &:hover::before {
+        transform: rotate(15deg) scale(1.2);
+        opacity: 1;
+      }
+
+      &:hover::after {
+        content: '♬';
+        position: absolute;
+        right: -20px;
+        color: #64ffda;
+        font-size: 0.8rem;
+        opacity: 0.8;
+        animation: float 1.5s infinite ease-in-out;
       }
     }
   }

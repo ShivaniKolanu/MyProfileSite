@@ -1,5 +1,7 @@
 import NameHeaderSimple from "./NameHeaderSimple";
 import Experience from "./Experience";
+import Skills from "./Skills";
+import Projects from "./Projects";
 import bgImage from "../assets/bg-img.png";
 import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
@@ -30,8 +32,8 @@ const AnimatedMusicNotes = () => {
 export default function MainPage() {
   const [hoveredButton, setHoveredButton] = useState(null);
 
-  const scrollToExperience = () => {
-    const element = document.getElementById('experience');
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -53,7 +55,7 @@ export default function MainPage() {
               <Button
                 onMouseEnter={() => setHoveredButton('experience')}
                 onMouseLeave={() => setHoveredButton(null)}
-                onClick={scrollToExperience}
+                onClick={() => scrollToSection('experience')}
               >
                 {hoveredButton === 'experience' && <AnimatedMusicNotes />}
                 Experience
@@ -63,6 +65,7 @@ export default function MainPage() {
               <Button
                 onMouseEnter={() => setHoveredButton('skills')}
                 onMouseLeave={() => setHoveredButton(null)}
+                onClick={() => scrollToSection('skills')}
               >
                 {hoveredButton === 'skills' && <AnimatedMusicNotes />}
                 Skills
@@ -72,6 +75,7 @@ export default function MainPage() {
               <Button
                 onMouseEnter={() => setHoveredButton('project')}
                 onMouseLeave={() => setHoveredButton(null)}
+                onClick={() => scrollToSection('projects')}
               >
                 {hoveredButton === 'project' && <AnimatedMusicNotes />}
                 Projects
@@ -90,6 +94,8 @@ export default function MainPage() {
         </StyledBox>
       </MainContainer>
       <Experience />
+      <Skills />
+      <Projects />
     </>
   );
 }

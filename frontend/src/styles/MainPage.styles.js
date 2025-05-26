@@ -30,6 +30,11 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+  }
 `;
 
 export const StyledBox = styled(Box)`
@@ -37,6 +42,24 @@ export const StyledBox = styled(Box)`
   justify-content: center;
   width: 100%;
   margin-top: 5rem;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    margin-top: 3rem;
+    padding: 0;
+
+    .MuiButtonGroup-root {
+      flex-direction: column;
+      width: 100%;
+
+      .MuiButton-root {
+        width: 100%;
+        margin: 0.25rem 0;
+        border-radius: 4px !important;
+        border: 1px solid white !important;
+      }
+    }
+  }
 `;
 
 export const StyledButtonGroup = styled(ButtonGroup)`
