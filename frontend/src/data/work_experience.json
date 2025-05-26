@@ -6,9 +6,9 @@
       "company": "ADP",
       "location": "Alpharetta, GA",
       "description": [
-       " Driving innovation in the Payroll Next Gen Innovation department by designing and developing intuitive UI components for the Test Automation Framework, empowering the entire unit with streamlined testing capabilities.",
-" Leveraging Angular, TypeScript, and Jest to build scalable, reusable UI solutions that enhance the efficiency of automated testing processes.",
- "Collaborating in an Agile environment to deliver a user-centric framework that significantly improves test coverage and reduces manual efforts across the organization."
+        "Spearheading the development of ADP Assist, a sophisticated AI agent using LangGraph.js and advanced API integrations, delivering intelligent solutions for a large client base with comprehensive Jest test coverage.",
+        "Leading UI innovation in Test Automation Framework, designing scalable components with Angular and TypeScript that streamline testing workflows across the organization.",
+        "Collaborating in an Agile environment to enhance automated testing processes, significantly improving test coverage and reducing manual effort."
       ]
     },
     {
@@ -88,4 +88,3 @@
       ]
     }
   ]
-  

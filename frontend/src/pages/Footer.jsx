@@ -9,7 +9,8 @@ import {
   Copyright,
   HeartIcon,
   MadeWith,
-  TechStack
+  TechStack,
+  Divider
 } from '../styles/Footer.styles';
 
 const Footer = () => {
@@ -69,6 +70,8 @@ const Footer = () => {
             ♥
           </HeartIcon>
           using <TechStack>React</TechStack> & <TechStack>Framer Motion</TechStack>
+          <Divider>|</Divider>
+          Built by Shivani Kolanu with AI collaboration
         </MadeWith>
 
         <Copyright>

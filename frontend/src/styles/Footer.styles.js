@@ -78,3 +78,22 @@ export const TechStack = styled.span`
   color: #64ffda;
   font-weight: bold;
 `;
+
+export const BuiltBy = styled.div`
+  color: #d4d7df;
+  font-family: "Electrolize", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const Divider = styled.span`
+  margin: 0 1rem;
+  color: #64ffda;
+  opacity: 0.6;
+`;
