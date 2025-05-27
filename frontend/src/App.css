@@ -59,7 +59,7 @@
 
 /* Custom Cursor Styles */
 * {
-  cursor: none !important;
+  cursor: none;
 }
 
 .custom-cursor {
@@ -73,44 +73,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  will-change: transform;
-  transform-origin: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: translate3d(-50%, -50%, 0);
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease;
+  transform: translate(-50%, -50%);
 }
 
 .custom-cursor::before {
   content: "𝄞";
-  position: absolute;
-  transform-style: preserve-3d;
-  animation: cursorFloat 1.5s infinite ease-in-out;
+  display: block;
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
-@keyframes cursorFloat {
-  0%, 100% {
-    transform: rotate(0deg) translateZ(0);
-  }
-  50% {
-    transform: rotate(15deg) scale(1.1) translateZ(0);
-  }
-}
-
+/* Hover effects */
 a:hover ~ .custom-cursor::before,
 button:hover ~ .custom-cursor::before,
 [role="button"]:hover ~ .custom-cursor::before,
 .clickable:hover ~ .custom-cursor::before {
-  content: "𝄞";
-  animation: cursorFloat 1s infinite ease-in-out;
+  transform: scale(1.2) rotate(15deg);
 }
 
-@media (max-width: 768px) {
+/* Mobile and touch device handling */
+@media (hover: none), (max-width: 768px) {
   * {
     cursor: auto !important;
   }
   
   .custom-cursor {
-    display: none;
+    display: none !important;
   }
   
   h2 {
@@ -130,13 +120,9 @@ button:hover ~ .custom-cursor::before,
   }
 }
 
-/* Hide custom cursor on touch devices */
-@media (hover: none) {
+/* Ensure cursor is hidden on desktop */
+@media (hover: hover) {
   * {
-    cursor: auto !important;
-  }
-  
-  .custom-cursor {
-    display: none;
+    cursor: none !important;
   }
 }
