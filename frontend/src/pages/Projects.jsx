@@ -12,6 +12,7 @@ import hireVistaImg from '../assets/projects/hireVista.png';
 import onlineVotingImg from '../assets/projects/online-voting.png';
 import gemInsightImg from '../assets/projects/gemInsight_2.jpg';
 import comDet from '../assets/projects/com-det.png';
+import langgraphGif from '../assets/projects/langgraph-project.gif';
 import {
   ProjectsContainer,
   SliderContainer,
@@ -30,7 +31,8 @@ const Projects = () => {
     'hireVista.png': hireVistaImg,
     'online-voting.png': onlineVotingImg,
     'gemInsight_2.jpg': gemInsightImg,
-    'com-det.png': comDet
+    'com-det.png': comDet,
+    'langgraph-project.gif': langgraphGif
   };
 
   const settings = {

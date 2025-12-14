@@ -28,6 +28,19 @@
       }
     },
     {
+      "title": "Angular LangGraph Chatbot",
+      "technologies": ["Angular", "LangGraph.js", "Node.js", "TypeScript"],
+      "description": [
+      "Angular LangGraph Chatbot is a simple workflow chatbot demonstrating how an agent or workflow logic can be integrated with any UI.",
+      "Features an Angular frontend and a TypeScript/Node.js backend powered by LangGraph.",
+      "Collects user details (first name, last name, age) and determines if the person is a major or minor, showcasing seamless UI-backend workflow communication."
+      ],
+      "image": "langgraph-project.gif",
+      "links": {
+      "github": "https://github.com/ShivaniKolanu/angular-langgraph-chatbot"
+      }
+    },
+    {
       "title": "GeminiUnifiedReview",
       "technologies": ["Kotlin", "Android", "Google Gemini API", "XML"],
       "description": [
