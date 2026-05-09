@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "title": "MockYantra: AI-Powered Mock API Platform",
+      "technologies": ["Next.js", "React", "TypeScript", "Prisma", "MUI", "Zod", "Gemini API", "SQLite"],
+      "description": [
+        "AI-powered mock API generation and hosting platform designed for fast frontend and integration testing.",
+        "Dual-mode API creation: AI mode generates API shapes and sample data from natural language prompts; Manual mode allows explicit schema definition with auto-generated sample records.",
+        "Public mock route handlers supporting full CRUD operations (GET, POST, PUT, PATCH, DELETE) with project-level organization and SQLite persistence via Prisma.",
+        "Comprehensive dashboard featuring API activity logs, project insights, and real-time monitoring capabilities."
+      ],
+      "image": "MockYantraDemo.mp4",
+      "links": {
+        "github": "https://github.com/ShivaniKolanu/MockYantra",
+        "story": "https://medium.com/@shivanikolanu2000/i-built-an-ai-powered-mock-api-platform-with-next-js-prisma-and-gemini-36a6365d0c07?postPublishedType=repub"
+      }
+    },
+    {
       "title": "Online Voting System using Blockchain",
       "technologies": ["Blockchain", "Python", "Face Recognition", "React", "Flask", "PostgreSQL"],
       "description": [

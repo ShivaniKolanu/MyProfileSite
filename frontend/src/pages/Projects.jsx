@@ -6,13 +6,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "@fontsource/carattere";
 import "@fontsource/electrolize";
-import { FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
+import { FaGithub, FaFilePdf, FaDesktop, FaMedium } from 'react-icons/fa';
 import bgImg from '../assets/projects/bg-img.png';
 import hireVistaImg from '../assets/projects/hireVista.png';
 import onlineVotingImg from '../assets/projects/online-voting.png';
 import gemInsightImg from '../assets/projects/gemInsight_2.jpg';
 import comDet from '../assets/projects/com-det.png';
 import langgraphGif from '../assets/projects/langgraph-project.gif';
+import mockYantraVideo from '../assets/projects/MockYantraDemo.mp4';
 import {
   ProjectsContainer,
   SliderContainer,
@@ -32,7 +33,8 @@ const Projects = () => {
     'online-voting.png': onlineVotingImg,
     'gemInsight_2.jpg': gemInsightImg,
     'com-det.png': comDet,
-    'langgraph-project.gif': langgraphGif
+    'langgraph-project.gif': langgraphGif,
+    'MockYantraDemo.mp4': mockYantraVideo
   };
 
   const settings = {
@@ -138,13 +140,24 @@ const Projects = () => {
                   <ProjectImage
                     variants={imageVariants}
                   >
-                    <img 
-                      src={projectImages[project.image]} 
-                      alt={project.title}
-                      onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x200?text=Project+Image';
-                      }}
-                    />
+                    {project.image.endsWith('.mp4') ? (
+                      <video 
+                        src={projectImages[project.image]} 
+                        alt={project.title}
+                        autoPlay
+                        muted
+                        loop
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      />
+                    ) : (
+                      <img 
+                        src={projectImages[project.image]} 
+                        alt={project.title}
+                        onError={(e) => {
+                          e.target.src = 'https://via.placeholder.com/400x200?text=Project+Image';
+                        }}
+                      />
+                    )}
                   </ProjectImage>
                   <ProjectTitle>{project.title}</ProjectTitle>
                   <TechStack>
@@ -166,6 +179,11 @@ const Projects = () => {
                     {project.links.github && (
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                         <FaGithub /> Code
+                      </a>
+                    )}
+                    {project.links.story && (
+                      <a href={project.links.story} target="_blank" rel="noopener noreferrer">
+                        <FaMedium /> Story
                       </a>
                     )}
                     {project.links.paper && (

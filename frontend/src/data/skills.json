@@ -12,6 +12,7 @@
         "Tailwind CSS",
         "Framer Motion",
         "Material UI",
+        "Stencil",
         "Responsive Design"
       ]
     },
@@ -20,12 +21,15 @@
       "skills": [
         "Node.js",
         "Express",
+        "Next.js",
         "Spring Boot",
         "Java",
         "Python",
         "Flask",
         "PHP",
         "Laravel",
+        "Prisma",
+        "Zod",
         "RESTful APIs"
       ]
     },
@@ -65,6 +69,8 @@
         "Google Gemini API Integration",
         "GitHub Copilot",
         "LangGraph",
+        "Strands",
+        "AgentCore",
         "AI-Enhanced Features",
         "Prompt Engineering"
       ]

@@ -6,6 +6,7 @@
       "company": "ADP",
       "location": "Alpharetta, GA",
       "description": [
+        "Developing and architecting AI agents using Strands framework and AgentCore, implementing advanced agentic patterns with autonomous task execution, state management, and seamless API integrations to deliver enterprise-grade AI solutions.",
         "Spearheading the development of ADP Assist, a sophisticated AI agent using LangGraph.js and advanced API integrations, delivering intelligent solutions for a large client base with comprehensive Jest test coverage.",
         "Leading UI innovation in Test Automation Framework, designing scalable components with Angular and TypeScript that streamline testing workflows across the organization.",
         "Collaborating in an Agile environment to enhance automated testing processes, significantly improving test coverage and reducing manual effort."
